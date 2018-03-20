@@ -24,6 +24,14 @@
     <title>RedBlue 赤琦丨新时代，新青年</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
     <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <link href='http://cdn.webfont.youziku.com/webfonts/nomal/114492/46749/5ab0bd3bf629d91820cae4e7.css' rel='stylesheet' type='text/css' />
+    <script type="text/javascript" src="http://cdn.webfont.youziku.com/wwwroot/js/wf/youziku.api.min.js"></script>
+    <script type="text/javascript">
+        $youziku.load("body", "bb7b2058f32542f795ffd73564dd8a79", "Source-Han-Normal");
+        /*$youziku.load("#id1,.class1,h1", "bb7b2058f32542f795ffd73564dd8a79", "Source-Han-Normal");*/
+        /*．．．*/
+        $youziku.draw();
+    </script>
     <style>
         html, body {
             height: 100%;
@@ -31,6 +39,7 @@
             overflow: hidden;
             margin: 0;
             padding: 0;
+            font-family:'Source-Han-Normal','SegoeWP';
         }
 
         @keyframes bg {
@@ -62,7 +71,7 @@
         #title h2 {
             color: #fff;
             font-size: 40px;
-            font-family: "museo-slab";
+            /*font-family: "museo-slab";*/
             margin: 0;
             padding: 0;
         }
@@ -70,10 +79,11 @@
         #title h3 {
             color: #fff;
             font-size: 20px;
-            font-family: "museo-sans";
+            /*font-family: "museo-sans";*/
             font-weight: 300;
             margin: 0;
             padding: 0;
+
         }
 
         #wrapper canvas {
@@ -112,26 +122,26 @@
             stroke: #009FFD;
             stroke-dasharray: 130 400;
             stroke-dashoffset: -285;
-            transition: 1s all ease
+            transition: 1s all ease;
         }
 
         #text {
-            margin-top: -50px;
-            text-align: center
+            margin-top: -40px;
+            text-align: center;
         }
 
         #text a {
             color: white;
             text-decoration: none;
             font-weight: 100;
-            font-size: 30px;
+            font-size: 24px;
         }
 
         .svg-wrapper:hover #shape {
             stroke-dasharray: 50 0;
             stroke-width: 3px;
             stroke-dashoffset: 0;
-            stroke: #06D6A0
+            stroke: #06D6A0;
         }
 
         .copyright {
@@ -152,15 +162,17 @@
 <body>
 <div id="wrapper">
     <div id="title">
-        <h2>RedBlue 赤琦</h2>
+        <h2><img src="http://p5tz556lu.bkt.clouddn.com/logo.png"></h2>
         <h3>我们一起可以在世界上产生影响</h3>
+        <div>
         <div class="svg-wrapper">
             <svg height="50" width="200" xmlns="http://www.w3.org/2000/svg">
                 <rect id="shape" height="50" width="200"></rect>
             </svg>
             <div id="text">
-                <a href="https://redblue.ga" target="_self">进入网站</a>
+                <a href="https://redblue.ga" target="_self">进入官网</a>
             </div>
+        </div>
             <div class="copyright">
                 <a href="https://redblue.ga" target="_self" class="copyright-a">RedBlue's Website<a><br>
                     Copyright © 1997 - 2018 <a href="https://redblue.ga" target="_self" class="copyright-a">RedBlue（赤琦）</a>All Rights Reserved.<br>
@@ -168,7 +180,6 @@
                     复兴中华 - 新中国、新时代、新青年 - 中华复兴<br>
             </div>
         </div>
-
 
         <canvas id="canvas" width="1950" height="800"></canvas>
         <canvas id="canvasbg" width="1950" height="800"></canvas>
