@@ -7,21 +7,23 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="rights" content="©redblue">
     <meta name="keywords"
-          content="redblue,redblue-赤琦,redblue.ga,赤琦,STEAM教育,github,fjutwzk,网科组,计算机,fjut,福建工程学院,国脉信息学院,鳝溪,大学生,org,新时代,新青年,新中国,福建工程学院,物联网,前端">
-    <meta name="description" content="Surface">
-    <meta property="og:title" content="RedBlue丨赤琦 - 新时代，新青年">
+          content="STEAM,科学,技术,工程,艺术,数学,福建工程学院,文化,科技,网络,新青年,Z世代,赤琦,redblue,国脉信息学院">
+    <meta name="description" content="赤琦（redblue）个人网站。关注科学（Science），技术（Technology），工程（Engineering），艺术（Art），数学（Mathematics）STEAM综合科学技术教育">
+    <meta property="og:title" content="RedBlue丨赤琦 - 新时代，新青年 - 封面">
     <meta property="og:type" content="article">
-    <meta property="og:url" content="https://redblue.ga">
-    <meta property="og:description" content="你有否窥看思想的背面">
+    <meta property="og:url" content="https://www.redblue.ga">
+    <meta property="og:description"
+          content="赤琦（redblue）个人网站。关注科学（Science），技术（Technology），工程（Engineering），艺术（Art），数学（Mathematics）STEAM综合科学技术教育">
     <meta property="og:image"
           content="https://spirit.redblue.ga/wp-content/uploads/logo.png">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="RedBlue丨赤琦 - 新时代，新青年">
-    <meta name="twitter:description" content="你有否窥看思想的背面">
-    <meta name="twitter:url" content="https://redblue.ga">
+    <meta name="twitter:description"
+          content="赤琦（redblue）个人网站。关注科学（Science），技术（Technology），工程（Engineering），艺术（Art），数学（Mathematics）STEAM综合科学技术教育">
+    <meta name="twitter:url" content="https://www.redblue.ga">
     <meta name="twitter:image"
           content="https://spirit.redblue.ga/wp-content/uploads/logo.png">
-    <title>RedBlue丨赤琦 - 新时代，新青年 - redblue.ga</title>
+    <title>RedBlue丨赤琦 - 新时代，新青年 - STEAM</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
     <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
     <style>
@@ -139,7 +141,8 @@
             color: #fff;
             margin-top: 20px;
         }
-        .my a{
+
+        .my a {
             color: #fff;
             text-decoration: none;
             margin: 0 10px;
@@ -147,7 +150,8 @@
 
 
     </style>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"
+          integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
 </head>
 <body>
 <div id="wrapper">
@@ -174,7 +178,8 @@
             <div class="my">
                 <a href="https://weibo.com/redblue9771" target="_blank"><i class="fab fa-weibo fa-2x"></i></a>
                 <a href="https://github.com/redblue9771" target="_blank"><i class="fab fa-github fa-2x"></i></a>
-                <a href="http://wpa.qq.com/msgrd?v=3&uin=760099879&site=qq&menu=yes" target="_blank"><i class="fab fa-qq fa-2x"></i></a>
+                <a href="http://wpa.qq.com/msgrd?v=3&uin=760099879&site=qq&menu=yes" target="_blank"><i
+                        class="fab fa-qq fa-2x"></i></a>
                 <a href="mailto:redblue9771@outlook.com" target="_blank"><i class="fas fa-at fa-2x"></i></a>
             </div>
             <div class="copyright">
@@ -302,14 +307,14 @@
             ctx.arc(circle.x, circle.y, radius * circleExp, 0, 2 * Math.PI, false);
             ctx.lineWidth = Math.max(1, circleBorder * (radMin - circle.radius) / (radMin - radMax));
             ctx.strokeStyle = ['rgba(', circle.borderColor, ',', circle.opacity, ')'].join('');
-            if (circle.filled == 'full') {
+            if (circle.filled === 'full') {
                 ctx.fillStyle = ['rgba(', circle.borderColor, ',', circle.background ? circle.opacity * 0.8 : circle.opacity, ')'].join('');
                 ctx.fill();
                 ctx.lineWidth = 0;
                 ctx.strokeStyle = ['rgba(', circle.borderColor, ',', 0, ')'].join('');
             }
             ctx.stroke();
-            if (circle.filled == 'concentric') {
+            if (circle.filled === 'concentric') {
                 ctx.beginPath();
                 ctx.arc(circle.x, circle.y, radius / 2, 0, 2 * Math.PI, false);
                 ctx.lineWidth = Math.max(1, circleBorder * (radMin - circle.radius) / (radMin - radMax));
@@ -403,7 +408,7 @@
 
         Optimizing tips from Benjamin K?stner
         General tips from Salvatore Previti*/
-        (function(){
+        (function () {
             var bp = document.createElement('script');
             var curProtocol = window.location.protocol.split(':')[0];
             if (curProtocol === 'https') {
@@ -416,7 +421,6 @@
             s.parentNode.insertBefore(bp, s);
         })();
     </script>
-
 
 
 </body>
